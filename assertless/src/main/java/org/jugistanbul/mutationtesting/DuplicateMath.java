@@ -1,4 +1,4 @@
-package ch.frankel.mutationtesting;
+package org.jugistanbul.mutationtesting;
 
 public class DuplicateMath {
 
