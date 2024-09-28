@@ -3,18 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.jugistanbul</groupId>
-    <artifactId>mutationtesting</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0.0</version>
-    <modules>
-        <module>assertless</module>
-        <module>boundary</module>
-        <module>bookstrore</module>
-    </modules>
+    <parent>
+        <groupId>org.jugistanbul</groupId>
+        <artifactId>mutationtesting</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>bookstrore</artifactId>
+
     <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
     <build>
         <pluginManagement>
